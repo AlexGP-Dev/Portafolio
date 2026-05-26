@@ -6,8 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Alex Garcia | Ingeniero de Sistemas & Analista de Datos</title>
     <!-- Google Fonts & Font Awesome -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -16,7 +15,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
 
         body {
             font-family: 'Inter', sans-serif;
@@ -273,7 +271,13 @@
             object-fit: cover;
             background: #eef2ff;
             display: block;
-            transition: transform 0.3s ease;
+            transition: transform 0.3s ease, filter 0.2s;
+            cursor: pointer;
+            /* Manito al pasar el cursor */
+        }
+
+        .project-img:hover {
+            filter: brightness(0.92);
         }
 
         .project-card:hover .project-img {
@@ -322,8 +326,44 @@
             border-left: 3px solid #2563eb;
         }
 
-        .project-footer {
-            padding: 0 24px 24px;
+        /* Lightbox (imagen ampliada en el centro) */
+        .lightbox-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 1000;
+            cursor: pointer;
+        }
+
+        .lightbox-img {
+            max-width: 90%;
+            max-height: 90%;
+            object-fit: contain;
+            border-radius: 12px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            cursor: default;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            font-size: 40px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.2s;
+            font-family: monospace;
+        }
+
+        .lightbox-close:hover {
+            color: #ccc;
         }
 
         /* Sobre mí y contacto */
@@ -497,14 +537,13 @@
             </div>
         </section>
 
-        <!-- Proyectos con imágenes personalizables -->
+        <!-- Proyectos con imágenes personalizables y lightbox -->
         <section id="proyectos">
             <div class="container">
                 <h2 class="section-title">Proyectos estratégicos</h2>
                 <div class="projects-grid">
 
                     <!-- Proyecto 1: Agente IA + Kommo -->
-
                     <div class="project-card">
                         <img class="project-img" src="https://i.ibb.co/Ps6rkphY/IA-para-Kommo.webp" alt="Agente IA n8n"
                             loading="lazy">
@@ -611,7 +650,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Nota: Puedes cambiar las URLs de las imágenes por las tuyas (ej. rutas locales o enlace directo) -->
             </div>
         </section>
 
@@ -645,7 +683,14 @@
         </div>
     </footer>
 
+    <!-- Lightbox HTML (imagen grande) -->
+    <div id="lightbox" class="lightbox-overlay">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" id="lightbox-img" alt="Vista ampliada">
+    </div>
+
     <script>
+        // Menú móvil
         const toggleBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
         toggleBtn.addEventListener('click', () => {
@@ -656,8 +701,47 @@
                 navLinks.classList.remove('show');
             });
         });
-        // Opcional: puedes reemplazar las imágenes de los proyectos editando el atributo src de cada .project-img
-        // Ejemplo: document.querySelectorAll('.project-img')[0].src = "mi-imagen.jpg";
+
+        // LIGHTBOX: al hacer clic en cualquier imagen con clase 'project-img'
+        document.addEventListener('DOMContentLoaded', function () {
+            const images = document.querySelectorAll('.project-img');
+            const lightbox = document.getElementById('lightbox');
+            const lightboxImg = document.getElementById('lightbox-img');
+            const closeBtn = document.querySelector('.lightbox-close');
+
+            function openLightbox(imgSrc) {
+                lightboxImg.src = imgSrc;
+                lightbox.style.display = 'flex';
+                document.body.style.overflow = 'hidden'; // evitar scroll detrás
+            }
+
+            function closeLightbox() {
+                lightbox.style.display = 'none';
+                document.body.style.overflow = '';
+                lightboxImg.src = '';
+            }
+
+            images.forEach(img => {
+                img.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    const src = img.getAttribute('src');
+                    if (src) {
+                        openLightbox(src);
+                    }
+                });
+            });
+
+            // Cerrar al hacer clic en el fondo oscuro o en la X
+            lightbox.addEventListener('click', closeLightbox);
+            if (closeBtn) {
+                closeBtn.addEventListener('click', (e) => {
+                    e.stopPropagation();
+                    closeLightbox();
+                });
+            }
+            // Evitar que clic en la imagen cierre el lightbox
+            lightboxImg.addEventListener('click', (e) => e.stopPropagation());
+        });
     </script>
 </body>
 
