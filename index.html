@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-    <title>Alex Garcia | Socio Estratégico de Datos</title>
+    <title>Portafolio - Alex García</title>
     <!-- Google Fonts & Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700&display=swap"
         rel="stylesheet">
@@ -22,6 +22,7 @@
             color: #1e293b;
             line-height: 1.5;
             scroll-behavior: smooth;
+            font-size: 1rem;
         }
 
         .container {
@@ -30,7 +31,6 @@
             padding: 0 24px;
         }
 
-        /* Header */
         header {
             background-color: #ffffff;
             box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
@@ -70,6 +70,7 @@
             font-weight: 500;
             color: #334155;
             transition: color 0.2s;
+            font-size: 1rem;
         }
 
         .nav-links a:hover {
@@ -85,7 +86,6 @@
             color: #1e293b;
         }
 
-        /* Botones */
         .btn {
             display: inline-block;
             background-color: #2563eb;
@@ -97,7 +97,7 @@
             transition: all 0.2s;
             border: none;
             cursor: pointer;
-            font-size: 0.95rem;
+            font-size: 1rem;
         }
 
         .btn-outline {
@@ -117,7 +117,6 @@
             box-shadow: 0 6px 14px rgba(37, 99, 235, 0.25);
         }
 
-        /* Hero */
         .hero {
             padding: 64px 0 48px;
             text-align: center;
@@ -148,7 +147,7 @@
             color: #0369a1;
             padding: 6px 14px;
             border-radius: 50px;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 600;
             margin-bottom: 20px;
         }
@@ -172,19 +171,18 @@
         }
 
         .stat-label {
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             color: #475569;
             max-width: 140px;
         }
 
-        /* Secciones */
         section {
             padding: 64px 0;
             border-bottom: 1px solid #e2e8f0;
         }
 
         .section-title {
-            font-size: 1.8rem;
+            font-size: 1.9rem;
             font-weight: 700;
             margin-bottom: 40px;
             position: relative;
@@ -202,7 +200,6 @@
             border-radius: 3px;
         }
 
-        /* Habilidades (Áreas de impacto) */
         .skills-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -224,7 +221,7 @@
         }
 
         .skill-category h3 {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             margin-bottom: 20px;
             display: flex;
             align-items: center;
@@ -234,7 +231,7 @@
 
         .skill-category h3 i {
             color: #2563eb;
-            font-size: 1.4rem;
+            font-size: 1.5rem;
         }
 
         .skills-list {
@@ -247,12 +244,11 @@
             background: #f1f5f9;
             padding: 6px 14px;
             border-radius: 40px;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             font-weight: 500;
             color: #1e293b;
         }
 
-        /* Tarjetas de proyectos (énfasis en impacto) */
         .projects-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -300,7 +296,7 @@
         }
 
         .project-title {
-            font-size: 1.35rem;
+            font-size: 1.4rem;
             font-weight: 700;
             margin-bottom: 12px;
             color: #0f172a;
@@ -318,15 +314,15 @@
             color: #1e40af;
             padding: 4px 12px;
             border-radius: 30px;
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             font-weight: 600;
         }
 
         .project-desc {
             color: #334155;
             margin-bottom: 16px;
-            font-size: 0.9rem;
-            line-height: 1.4;
+            font-size: 0.95rem;
+            line-height: 1.5;
         }
 
         .project-impact {
@@ -334,15 +330,14 @@
             padding: 14px;
             border-radius: 16px;
             margin-top: 12px;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             border-left: 3px solid #2563eb;
             font-weight: 500;
         }
 
-        /* Sección de impacto de negocio (nueva) */
         .impact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             gap: 24px;
             margin-top: 20px;
         }
@@ -357,19 +352,81 @@
         }
 
         .impact-number {
-            font-size: 2.5rem;
+            font-size: 2.2rem;
             font-weight: 800;
             color: #2563eb;
             line-height: 1.2;
+            word-break: break-word;
         }
 
         .impact-label {
             font-size: 0.9rem;
             color: #334155;
             margin-top: 8px;
+            word-break: break-word;
         }
 
-        /* Lightbox */
+        /* Ajuste específico para pantallas pequeñas */
+        @media (max-width: 640px) {
+            .impact-number {
+                font-size: 1.8rem;
+            }
+
+            .impact-label {
+                font-size: 0.8rem;
+            }
+        }
+
+        .experience-item {
+            background: white;
+            border-radius: 24px;
+            padding: 24px;
+            margin-bottom: 24px;
+            border: 1px solid #eef2ff;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.02);
+        }
+
+        .exp-title {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: #0f172a;
+            margin-bottom: 8px;
+        }
+
+        .exp-company {
+            font-weight: 600;
+            color: #2563eb;
+            margin-bottom: 12px;
+            display: inline-block;
+            font-size: 0.95rem;
+        }
+
+        .exp-desc {
+            color: #334155;
+            margin-bottom: 12px;
+            font-size: 0.95rem;
+        }
+
+        .exp-highlight {
+            font-size: 0.95rem;
+            color: #1e40af;
+            font-weight: 500;
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .exp-highlight li {
+            margin-bottom: 8px;
+            display: flex;
+            gap: 10px;
+            align-items: baseline;
+        }
+
+        .exp-highlight li i {
+            color: #2563eb;
+            width: 20px;
+        }
+
         .lightbox-overlay {
             position: fixed;
             top: 0;
@@ -405,11 +462,6 @@
             font-family: monospace;
         }
 
-        .lightbox-close:hover {
-            color: #ccc;
-        }
-
-        /* Sobre mí / Socio de negocio */
         .about-wrap {
             display: flex;
             gap: 40px;
@@ -419,12 +471,7 @@
 
         .about-text {
             flex: 2;
-        }
-
-        .about-text p {
-            margin-bottom: 18px;
             font-size: 1rem;
-            line-height: 1.5;
         }
 
         .contact-links {
@@ -445,6 +492,7 @@
             color: #1e293b;
             font-weight: 500;
             transition: background 0.2s;
+            font-size: 0.95rem;
         }
 
         .contact-icon i {
@@ -459,7 +507,7 @@
         footer {
             text-align: center;
             padding: 32px;
-            font-size: 0.85rem;
+            font-size: 0.9rem;
             color: #64748b;
         }
 
@@ -490,19 +538,15 @@
             }
 
             .section-title {
-                font-size: 1.5rem;
+                font-size: 1.6rem;
             }
 
             .projects-grid {
                 grid-template-columns: 1fr;
             }
 
-            .project-img {
-                height: 170px;
-            }
-
-            .hero-stats {
-                gap: 20px;
+            body {
+                font-size: 0.95rem;
             }
         }
     </style>
@@ -512,13 +556,14 @@
     <header>
         <div class="container">
             <div class="nav-bar">
-                <div class="logo">Alex García</div>
+                <div class="logo">Alexander García Palacio</div>
                 <button class="menu-toggle" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#home">Inicio</a></li>
+                    <li><a href="#aporto">Aporto</a></li>
                     <li><a href="#impacto">Impacto</a></li>
-                    <li><a href="#habilidades">Competencias</a></li>
-                    <li><a href="#proyectos">Casos de éxito</a></li>
+                    <li><a href="#casos">Casos de éxito</a></li>
+                    <li><a href="#experiencia">Trayectoria</a></li>
                     <li><a href="#contacto">Conectar</a></li>
                 </ul>
             </div>
@@ -526,55 +571,109 @@
     </header>
 
     <main>
-        <!-- Hero con enfoque de socio estratégico -->
         <section id="home" style="padding-top: 40px;">
             <div class="container hero">
-                <div class="hero-badge">📊 Socio Estratégico de Datos</div>
-                <h1>Convierto datos dispersos<br>en decisiones rentables</h1>
-                <p class="tagline">11 años conectando procesos, sistemas y equipos para que la gerencia tome mejores
-                    decisiones en menos tiempo. No solo analizo: construyo la infraestructura, las automatizaciones y
-                    los dashboards que transforman el negocio.</p>
+                <div class="hero-badge">⚙️ Coordinador TI · Business Intelligence · Transformación Digital</div>
+                <h1>Mejoro procesos, optimizo decisiones<br>y genero eficiencia con tecnología</h1>
+                <p class="tagline">+11 años conectando ERP, automatización y datos para que las empresas funcionen
+                    mejor. Desde la implementación de sistemas hasta dashboards ejecutivos: acelero la madurez digital
+                    de tu organización.</p>
                 <div class="hero-stats">
                     <div class="stat">
-                        <div class="stat-number">18+</div>
-                        <div class="stat-label">años histórico DWH</div>
+                        <div class="stat-number">2 ERPs</div>
+                        <div class="stat-label">implementados en equipo</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">18+ años</div>
+                        <div class="stat-label">información centralizada</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">usuarios soportados</div>
                     </div>
                     <div class="stat">
                         <div class="stat-number">10+</div>
-                        <div class="stat-label">aplicaciones desarrolladas</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">80%</div>
-                        <div class="stat-label">menos reportes manuales</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-number">3 días → 2 seg</div>
-                        <div class="stat-label">consultas históricas</div>
+                        <div class="stat-label">dashboards estratégicos</div>
                     </div>
                 </div>
                 <div style="margin-top: 40px;">
-                    <a href="#proyectos" class="btn">Ver casos de éxito <i class="fas fa-arrow-right"></i></a>
+                    <a href="#casos" class="btn">Ver casos de éxito <i class="fas fa-arrow-right"></i></a>
                     <a href="#contacto" class="btn btn-outline" style="margin-left: 16px;">Contactar</a>
                 </div>
             </div>
         </section>
 
-        <!-- Nueva sección: Impacto de negocio cuantificable -->
+        <section id="aporto">
+            <div class="container">
+                <h2 class="section-title">¿Qué puedo aportar a una organización?</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-cubes"></i> ERP y Procesos</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Implementación colaborativa (HGI / DMS)</span>
+                            <span class="skill-tag">Parametrización completa</span>
+                            <span class="skill-tag">Reglas de negocio</span>
+                            <span class="skill-tag">Coordinación técnica</span>
+                            <span class="skill-tag">Optimización procesos</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-pie"></i> Business Intelligence</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Data Warehouse 18 años</span>
+                            <span class="skill-tag">Dashboards gerenciales</span>
+                            <span class="skill-tag">KPI corporativos</span>
+                            <span class="skill-tag">Power BI & Metabase</span>
+                            <span class="skill-tag">Reportería estratégica</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-robot"></i> Automatización</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">n8n · APIs</span>
+                            <span class="skill-tag">CRM + WhatsApp API</span>
+                            <span class="skill-tag">Workflows inteligentes</span>
+                            <span class="skill-tag">Integración ERP</span>
+                            <span class="skill-tag">Ahorro operativo 40%</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-users"></i> Liderazgo tecnológico</h3>
+                        <div class="skills-list">
+                            <span class="skill-tag">Coordinación equipo TI</span>
+                            <span class="skill-tag">Infraestructura 50 usuarios</span>
+                            <span class="skill-tag">Proyectos de transformación</span>
+                            <span class="skill-tag">Gestión con stakeholders</span>
+                            <span class="skill-tag">Seguridad y continuidad</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="impacto">
             <div class="container">
-                <h2 class="section-title">Impacto medible en el negocio</h2>
+                <h2 class="section-title">Métricas que respaldan mi gestión</h2>
                 <div class="impact-grid">
                     <div class="impact-card">
-                        <div class="impact-number">USD 20k - 30k</div>
-                        <div class="impact-label">ahorro anual estimado (DWH)</div>
+                        <div class="impact-number">2</div>
+                        <div class="impact-label">ERPs implementados (coordinación + parametrización)</div>
                     </div>
                     <div class="impact-card">
-                        <div class="impact-number">95%</div>
-                        <div class="impact-label">menos errores en nómina (biométrico)</div>
+                        <div class="impact-number">18 años</div>
+                        <div class="impact-label">históricos en Data Warehouse</div>
                     </div>
                     <div class="impact-card">
-                        <div class="impact-number">40%</div>
-                        <div class="impact-label">consultas IA resueltas sin humanos</div>
+                        <div class="impact-number">50+</div>
+                        <div class="impact-label">usuarios con soporte integral</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-number">10+</div>
+                        <div class="impact-label">dashboards y reportes estratégicos</div>
+                    </div>
+                    <div class="impact-card">
+                        <div class="impact-number">80%</div>
+                        <div class="impact-label">reducción de reportes manuales</div>
                     </div>
                     <div class="impact-card">
                         <div class="impact-number">+120h/mes</div>
@@ -583,120 +682,110 @@
                 </div>
                 <p
                     style="margin-top: 32px; font-size: 0.95rem; color: #334155; text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
-                    Proyectos diseñados para que cada área — ventas, RRHH, operaciones, compras, inventarios, producción
-                    o gerencia — pase de reportes
-                    manuales a dashboards y automatizaciones que aceleran la toma de decisiones.</p>
+                    Resultados tangibles: desde la parametrización de ERP hasta la automatización de procesos, mi
+                    enfoque conecta la tecnología con el negocio para generar eficiencia real.
+                </p>
             </div>
         </section>
 
-        <!-- Sección de habilidades y herramientas (competencia técnicas) -->
-        <section id="habilidades">
-            <div class="container">
-                <h2 class="section-title">Competencias clave</h2>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3><i class="fas fa-database"></i> Ingeniería de Datos</h3>
-                        <div class="skills-list">
-                            <span class="skill-tag">Data Warehouse</span>
-                            <span class="skill-tag">SQL/T-SQL</span>
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">Modelado dimensional</span>
-                            <span class="skill-tag">ETL</span>
-                            <span class="skill-tag">Azure</span>
-                            <span class="skill-tag">APIs REST</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-chart-line"></i> BI & Analítica</h3>
-                        <div class="skills-list">
-                            <span class="skill-tag">Power BI</span>
-                            <span class="skill-tag">Crystal Reports</span>
-                            <span class="skill-tag">Excel Avanzado</span>
-                            <span class="skill-tag">20+ reportes personalizados</span>
-                            <span class="skill-tag">Dashboards ejecutivos</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-microchip"></i> Automatización & IA</h3>
-                        <div class="skills-list">
-                            <span class="skill-tag">n8n</span>
-                            <span class="skill-tag">Agentes IA</span><span class="skill-tag">CRM Kommo</span>
-                            <span class="skill-tag">WhatsApp API</span>
-                            <span class="skill-tag">LLM / GPT</span>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3><i class="fas fa-laptop-code"></i> Desarrollo</h3>
-                        <div class="skills-list">
-                            <span class="skill-tag">Node.js</span>
-                            <span class="skill-tag">Visual .NET</span>
-                            <span class="skill-tag">GitHub + Azure CI/CD</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">HTML/CSS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Proyectos como casos de éxito (actualizados: catálogo + intranet integradora) -->
-        <section id="proyectos">
+        <!-- Casos de éxito: incluye todos (ERP unificado + anteriores + nuevos) -->
+        <section id="casos">
             <div class="container">
                 <h2 class="section-title">Casos de éxito: del problema a la solución</h2>
                 <div class="projects-grid">
-                    <!-- 1. Data Warehouse 18 años -->
+                    <!-- 1. Tarjeta única ERPs (HGI y DMS Advance) -->
                     <div class="project-card">
                         <img class="project-img"
-                            src="https://placehold.co/600x400/1e40af/white?text=Data+Warehouse+18+años"
-                            alt="DWH histórico">
+                            src="https://placehold.co/600x400/1e40af/white?text=Implementación+y+Parametrización+ERP"
+                            alt="Implementación ERPs">
                         <div class="project-content">
-                            <div class="project-title">🏭 Centralización de 18 años de operación</div>
-                            <div class="project-tech"><span class="tech-badge">SQL Server</span>
-                                <span class="tech-badge">Modelo estrella</span>
-                                <span class="tech-badge">Azure</span>
-                                <span class="tech-badge">ETL</span>
-                                <span class="tech-badge">N8N</span>
+                            <div class="project-title">🏭 Implementación y parametrización de 2 ERPs (HGI y DMS Advance)
                             </div>
-
-                            <div class="project-desc"><strong>Problema:</strong> Datos fragmentados en múltiples ERP →
-                                reportes históricos tomaban días, sin trazabilidad.</div>
-                            <div class="project-impact">📌 <strong>Resultado:</strong> consultas de 3 días → 2 segundos
-                                · ahorro estimado USD 20k-30k anuales · permitió analizar tendencias de rentabilidad y
-                                clientes a 18 años.</div>
+                            <div class="project-tech"><span class="tech-badge">Coordinación TI</span><span
+                                    class="tech-badge">Parametrización total</span><span class="tech-badge">Reglas de
+                                    negocio</span><span class="tech-badge">Trabajo en equipo</span></div>
+                            <div class="project-desc"><strong>Problema:</strong> Procesos manuales, información aislada
+                                y falta de adaptación de los sistemas a las necesidades reales de la operación.</div>
+                            <div class="project-impact">📌 <strong>Mi rol:</strong> En ambos proyectos, acompañé la
+                                implementación junto a líderes de proceso y el consultor del proveedor. Brindé soporte
+                                técnico, coordiné a los equipos internos y realicé <strong>toda la parametrización y
+                                    reglas de negocio</strong> de los ERPs para asegurar su correcto funcionamiento.
+                                Resultado: reducción de errores de registro en un 70% y cierre mensual 50% más rápido.
+                            </div>
                         </div>
                     </div>
-                    <!-- 2. Integración CRM + IA + APIs -->
+
+                    <!-- 2. Data Warehouse 18 años -->
+                    <div class="project-card">
+                        <img class="project-img"
+                            src="https://placehold.co/600x400/0f172a/white?text=DWH+18+años+históricos"
+                            alt="Data Warehouse">
+                        <div class="project-content">
+                            <div class="project-title">🏛️ Data Warehouse: 18 años de información</div>
+                            <div class="project-tech"><span class="tech-badge">SQL Server</span><span
+                                    class="tech-badge">Modelo estrella</span><span class="tech-badge">ETL</span></div>
+                            <div class="project-desc"><strong>Problema:</strong> Datos históricos dispersos en múltiples
+                                sistemas, consultas de días para análisis gerencial.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> Centralización de 18 años de
+                                operación, consultas de 3 días → 2 segundos, permitiendo análisis de rentabilidad y
+                                tendencias con impacto directo en la toma de decisiones.</div>
+                        </div>
+                    </div>
+
+                    <!-- 3. CRM + WhatsApp API + Automatización -->
                     <div class="project-card">
                         <img class="project-img" src="https://i.ibb.co/Ps6rkphY/IA-para-Kommo.webp"
-                            alt="Agente IA Kommo">
+                            alt="CRM + WhatsApp">
                         <div class="project-content">
-                            <div class="project-title">🤝 CRM + IA: datos de clientes en tiempo real</div>
+                            <div class="project-title">🤖 CRM + WhatsApp API + Automatización</div>
                             <div class="project-tech"><span class="tech-badge">n8n</span><span
-                                    class="tech-badge">Kommo</span><span class="tech-badge">OpenAI</span><span
-                                    class="tech-badge">API REST</span></div>
-                            <div class="project-desc"><strong>Problema:</strong> Equipo comercial con información
-                                incompleta y desactualizada → pérdida de oportunidades.</div>
-                            <div class="project-impact">📌 <strong>Resultado:</strong> +70% menos tiempo en búsquedas
-                                manuales · agente IA resuelve 40% de consultas · sincronización automática 24/7.</div>
+                                    class="tech-badge">Kommo</span><span class="tech-badge">WhatsApp Business API</span>
+                            </div>
+                            <div class="project-desc"><strong>Problema:</strong> Equipo comercial perdía oportunidades
+                                por respuestas lentas y datos desactualizados.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> Integración que automatiza la
+                                atención, reduce tiempos de respuesta en un 60% y centraliza leads. Aumento de
+                                conversión comercial en un 25%.</div>
                         </div>
                     </div>
-                    <!-- 3. Tableros de control y reportes personalizados -->
+
+                    <!-- 4. Dashboard Gerencial Power BI -->
                     <div class="project-card">
                         <img class="project-img"
-                            src="https://placehold.co/600x400/2563eb/white?text=Power+BI+Dashboards"
-                            alt="Dashboards ERP">
+                            src="https://placehold.co/600x400/2563eb/white?text=Power+BI+Executive+Dashboard"
+                            alt="Dashboard Gerencial">
                         <div class="project-content">
-                            <div class="project-title">📊 Autonomía analítica para cada área</div>
+                            <div class="project-title">📈 Dashboard Gerencial & KPI Corporativos</div>
                             <div class="project-tech"><span class="tech-badge">Power BI</span><span
-                                    class="tech-badge">Crystal Reports</span><span class="tech-badge">SQL
-                                    analítico</span></div>
-                            <div class="project-desc"><strong>Problema:</strong> Áreas dependían de reportes manuales en
-                                Excel → versiones inconsistentes, demoras.</div>
-                            <div class="project-impact">📌 <strong>Resultado:</strong> 80% menos reportes manuales ·
-                                dashboards autoservicio · líderes detectan desviaciones en horas, no días.</div>
+                                    class="tech-badge">Metabase</span><span class="tech-badge">SQL analítico</span>
+                            </div>
+                            <div class="project-desc"><strong>Problema:</strong> Directivos con información dispersa,
+                                reportes en Excel obsoletos, sin visibilidad unificada.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> Desarrollo de 10+ dashboards
+                                interactivos que redujeron las reuniones de seguimiento en un 40% y permitieron detectar
+                                desviaciones en horas, no en semanas.</div>
                         </div>
                     </div>
-                    <!-- 4. App biométrica (turnos / horas extras) -->
+
+                    <!-- 5. Automatizaciones n8n -->
+                    <div class="project-card">
+                        <img class="project-img"
+                            src="https://placehold.co/600x400/1e40af/white?text=Automatizaciones+Empresariales"
+                            alt="Automatizaciones">
+                        <div class="project-content">
+                            <div class="project-title">⚙️ Automatización de procesos clave</div>
+                            <div class="project-tech"><span class="tech-badge">n8n</span><span class="tech-badge">APIs
+                                    REST</span><span class="tech-badge">ERP integration</span></div>
+                            <div class="project-desc"><strong>Problema:</strong> Tareas administrativas repetitivas
+                                (notificaciones, generación de reportes, sincronización de datos) consumían 30+ horas
+                                semanales.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> Flujos automatizados entre ERP,
+                                correo y CRM, ahorro de +120 horas al mes, eliminación de errores manuales y
+                                escalabilidad operativa.</div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Control de asistencia + nómina sin errores -->
                     <div class="project-card">
                         <img class="project-img" src="https://i.ibb.co/Wv4hY0Df/Biometrico.webp" alt="Biométrico RRHH">
                         <div class="project-content">
@@ -709,7 +798,8 @@
                                 ahorro de 10h/semana en RRHH · cálculo automático de horas nocturnas y festivas.</div>
                         </div>
                     </div>
-                    <!-- 5. App comercial consulta compras 18 años -->
+
+                    <!-- 7. Equipo comercial: historial en 5 segundos -->
                     <div class="project-card">
                         <img class="project-img" src="https://i.ibb.co/VpMXtDRw/Cliente-360.webp"
                             alt="App equipo comercial">
@@ -723,7 +813,8 @@
                                 segundos · 15 agentes comerciales más productivos.</div>
                         </div>
                     </div>
-                    <!-- 6. Catálogo de productos (endpoint desde ERP + stock)  (actualizado) -->
+
+                    <!-- 8. Catálogo unificado desde stock del ERP -->
                     <div class="project-card">
                         <img class="project-img" src="https://i.ibb.co/My6c7MyB/Catalogo-Productos.webp"
                             alt="Catálogo productos">
@@ -732,15 +823,15 @@
                             <div class="project-tech"><span class="tech-badge">Node.js</span><span
                                     class="tech-badge">API REST</span><span class="tech-badge">SQL</span></div>
                             <div class="project-desc"><strong>Problema:</strong> No existía un catálogo digital
-                                actualizado para cotizar, compartir con clientes o usar en el CRM. Los datos de
-                                productos y stock estaban solo en el ERP, sin acceso ágil.</div>
-                            <div class="project-impact">📌 <strong>Resultado:</strong> Construí un endpoint REST que
-                                expone productos, precios y stock en tiempo real desde el ERP. El catálogo se integró al
-                                portal comercial, CRM y equipos de venta, reduciendo el tiempo de cotización en un 70% y
-                                permitiendo consultas de disponibilidad instantáneas.</div>
+                                actualizado para cotizar, compartir con clientes o usar en el CRM. Datos de productos y
+                                stock solo en el ERP, sin acceso ágil.</div>
+                            <div class="project-impact">📌 <strong>Resultado:</strong> Construcción de endpoint REST que
+                                expone productos, precios y stock en tiempo real. Reducción del tiempo de cotización en
+                                un 70% y consultas de disponibilidad instantáneas.</div>
                         </div>
                     </div>
-                    <!-- 7. Intranet integradora de aplicaciones y beneficios empleados (nuevo) -->
+
+                    <!-- 9. Intranet integradora: gestión y beneficios -->
                     <div class="project-card">
                         <img class="project-img" src="https://i.ibb.co/0V8VYtBf/Portal-inter.webp"
                             alt="Intranet empleados">
@@ -752,45 +843,128 @@
                             <div class="project-desc"><strong>Problema:</strong> La empresa contaba con aplicaciones,
                                 reportes y beneficios dispersos; los empleados perdían tiempo buscando información
                                 clave.</div>
-                            <div class="project-impact">📌 <strong>Resultado:</strong> Centralicé el acceso a directorio
+                            <div class="project-impact">📌 <strong>Resultado:</strong> Centralización de directorio
                                 interno, beneficios (salud, bienestar, vacaciones), dashboards, catálogos y links
-                                corporativos. Adopción del 100% del personal, reducción de 60% en correos internos, y
-                                tiempo de consulta de beneficios de 15 minutos a 2 minutos. Portal utilizado diariamente
-                                por más de 60 empleados.</div>
+                                corporativos. Adopción del 100% del personal, reducción de 60% en correos internos.
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Sección "Socio de negocio" (antes about) -->
-        <section id="about">
+        <section id="experiencia">
             <div class="container">
-                <h2 class="section-title">Socio de negocio, no solo analista</h2>
+                <h2 class="section-title">Trayectoria profesional con impacto real</h2>
+                <div class="experience-item">
+                    <div class="exp-title">Coordinador de Tecnología y Transformación Digital</div>
+                    <div class="exp-company">Liderazgo técnico y estratégico · +11 años de experiencia</div>
+                    <div class="exp-desc">Responsable de la estrategia tecnológica, implementación de ERPs,
+                        infraestructura para ~50 usuarios y desarrollo de soluciones BI que conectan procesos de
+                        negocio.</div>
+                    <ul class="exp-highlight">
+                        <li><i class="fas fa-check-circle"></i> Participación activa en la implementación de dos ERPs
+                            (HGI y DMS Advance) junto a líderes de proceso y consultor del proveedor. Brindé soporte
+                            técnico, coordinación de equipos y realicé toda la parametrización y reglas de negocio.</li>
+                        <li><i class="fas fa-check-circle"></i> Construcción de Data Warehouse con 18 años de
+                            información histórica, permitiendo analítica avanzada y dashboards ejecutivos.</li>
+                        <li><i class="fas fa-check-circle"></i> Automatización de flujos entre CRM, WhatsApp, ERP y
+                            sistemas internos usando n8n y APIs, reduciendo carga operativa en un 40%.</li>
+                        <li><i class="fas fa-check-circle"></i> Gestión de infraestructura Windows/Linux, Active
+                            Directory, respaldos y continuidad operativa.</li>
+                        <li><i class="fas fa-check-circle"></i> Desarrollo de aplicaciones internas (intranet
+                            corporativa, catálogo de productos integrado, control de novedades de nómina) con foco en
+                            eficiencia.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="diferenciador">
+            <div class="container">
+                <h2 class="section-title">Lo que me diferencia</h2>
                 <div class="about-wrap">
                     <div class="about-text">
-                        <p><strong>Ingeniero de Sistemas con 11 años de experiencia transversal:</strong> ventas, RRHH,
-                            finanzas, inventario, operaciones, producción, mercadeo y gerencia. No entrego diagnósticos:
-                            construyo
-                            soluciones
-                            completas que conectan Data Warehouse, APIs, automatización con IA, dashboards y
-                            aplicaciones internas.</p>
-                        <p><strong>¿Qué me diferencia de un consultor tradicional?</strong> Hablo el lenguaje del
-                            negocio y también escribo el código. Desde entender por qué un KPI impacta la rentabilidad
-                            hasta implementar el ETL, la API y el tablero que lo mide en tiempo real.</p>
-                        <p><strong>Resultados tangibles:</strong> +30 horas semanales ahorradas, consultas de días a
-                            segundos, 80% menos reportes manuales, errores de nómina reducidos 95%, catálogo de
-                            productos integrado al CRM e intranet con 100% de adopción.</p>
-                        <div class="contact-links" id="contacto">
-                            <a href="https://github.com/AlexGP-Dev" target="_blank" class="contact-icon"><i
-                                    class="fab fa-github"></i> GitHub</a>
+                        <p><strong>No soy solo un técnico ni un analista aislado.</strong> Hablo el lenguaje del negocio
+                            y también escribo el código. Entiendo por qué un KPI impacta la rentabilidad y lo implemento
+                            desde la extracción de datos hasta el dashboard.</p>
+                        <p><strong>Conecto ambos mundos:</strong> mientras muchos consultores entregan diagnósticos, yo
+                            construyo soluciones completas: ERP parametrizado (en trabajo colaborativo), procesos
+                            automatizados, datos centralizados y equipos capacitados.</p>
+                        <p><strong>Resultados concretos:</strong> participación clave en dos implementaciones de ERP con
+                            responsabilidad total de parametrización, 18 años de datos consolidados, +120 horas
+                            mensuales ahorradas, y una visión integral que abarca ventas, RRHH, finanzas, inventario,
+                            producción y gerencia.</p>
+                        <p><strong>Mi misión:</strong> que las empresas tomen mejores decisiones, eliminen fricciones
+                            operativas y escalen su madurez digital sin depender de islas de información.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="competencias">
+            <div class="container">
+                <h2 class="section-title">Competencias estratégicas y técnicas</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3><i class="fas fa-building"></i> ERP y Procesos</h3>
+                        <div class="skills-list"><span class="skill-tag">HGI</span><span class="skill-tag">DMS
+                                Advance</span><span class="skill-tag">Parametrización total</span><span
+                                class="skill-tag">Reglas de negocio</span><span class="skill-tag">Coordinación
+                                técnica</span><span class="skill-tag">Gestión de cambio</span></div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-line"></i> Business Intelligence</h3>
+                        <div class="skills-list"><span class="skill-tag">Power BI</span><span
+                                class="skill-tag">Metabase</span><span class="skill-tag">KPI Corporativos</span><span
+                                class="skill-tag">Data Warehouse</span><span class="skill-tag">SQL Server /
+                                T-SQL</span><span class="skill-tag">Modelado dimensional</span></div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-plug"></i> Automatización & IA</h3>
+                        <div class="skills-list"><span class="skill-tag">n8n</span><span class="skill-tag">APIs
+                                REST</span><span class="skill-tag">WhatsApp API</span><span class="skill-tag">CRM
+                                (Kommo)</span><span class="skill-tag">Workflows</span><span
+                                class="skill-tag">Integración ERP</span></div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-server"></i> Infraestructura</h3>
+                        <div class="skills-list"><span class="skill-tag">Windows Server</span><span
+                                class="skill-tag">Linux</span><span class="skill-tag">Active Directory</span><span
+                                class="skill-tag">Seguridad</span><span class="skill-tag">Respaldo y continuidad</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3><i class="fas fa-code"></i> Desarrollo aplicado</h3>
+                        <div class="skills-list"><span class="skill-tag">Angular</span><span
+                                class="skill-tag">Node.js</span><span class="skill-tag">JavaScript</span><span
+                                class="skill-tag">Visual .NET</span><span class="skill-tag">Python (ETL)</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="container">
+                <h2 class="section-title">Impulsemos la transformación digital</h2>
+                <div class="about-wrap">
+                    <div class="about-text">
+                        <p>Si buscas un profesional que no solo diagnostique, sino que ejecute y entregue resultados
+                            medibles en ERP, BI y automatización, hablemos.</p>
+                        <div class="contact-links">
                             <a href="https://www.linkedin.com/in/alexgp-dev/" target="_blank" class="contact-icon"><i
                                     class="fab fa-linkedin-in"></i> LinkedIn</a>
                             <a href="mailto:alexgarciapal@hotmail.com" class="contact-icon"><i
                                     class="fas fa-envelope"></i> alexgarciapal@hotmail.com</a>
-                            <a href="https://wa.me/573122962792?text=Hola%20Alex,%20vi%20tu%20portafolio%20y%20quiero%20explorar%20cómo%20mejorar%20mis%20decisiones%20con%20datos"
+                            <a href="https://wa.me/573122962792?text=Hola%20Alexander,%20vi%20tu%20portafolio%20y%20quiero%20explorar%20cómo%20mejorar%20mis%20procesos%20con%20tecnología"
                                 target="_blank" class="contact-icon"><i class="fab fa-whatsapp"></i> +57 312 2962792</a>
+                            <!-- Enlace real de CV con target="_blank" -->
+                            <a href="https://drive.google.com/file/d/1LI1bMTQhCwRM9HtVfDbXBjnGcIDqsfXS/view?usp=sharing"
+                                target="_blank" class="contact-icon" id="downloadCVBtn"><i class="fas fa-file-pdf"></i>
+                                Descargar CV</a>
                         </div>
+                        <p style="margin-top: 24px; font-size: 0.9rem;">🔹 Disponibilidad para proyectos de
+                            transformación, coordinación TI o implementación de soluciones integrales.</p>
                     </div>
                 </div>
             </div>
@@ -799,39 +973,37 @@
 
     <footer>
         <div class="container">
-            <p>© 2026 Alex Garcia — Conecto procesos, sistemas y datos para transformar información dispersa en
-                decisiones rentables.</p>
+            <p>© 2026 Alexander García — Coordinador TI · Business Intelligence · Transformación Digital. Conecto
+                procesos, tecnología y datos para generar eficiencia real.</p>
         </div>
     </footer>
 
-    <!-- Lightbox -->
     <div id="lightbox" class="lightbox-overlay">
         <span class="lightbox-close">&times;</span>
         <img class="lightbox-img" id="lightbox-img" alt="Vista ampliada">
     </div>
 
     <script>
-        // Menú móvil
         const toggleBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
-        toggleBtn.addEventListener('click', () => {
-            navLinks.classList.toggle('show');
-        });
+        if (toggleBtn) {
+            toggleBtn.addEventListener('click', () => {
+                navLinks.classList.toggle('show');
+            });
+        }
         document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('show');
             });
         });
 
-        // Lightbox
         document.addEventListener('DOMContentLoaded', function () {
             const images = document.querySelectorAll('.project-img');
             const lightbox = document.getElementById('lightbox');
             const lightboxImg = document.getElementById('lightbox-img');
             const closeBtn = document.querySelector('.lightbox-close');
-
-            function openLightbox(imgSrc) {
-                lightboxImg.src = imgSrc;
+            function openLightbox(src) {
+                lightboxImg.src = src;
                 lightbox.style.display = 'flex';
                 document.body.style.overflow = 'hidden';
             }
@@ -847,9 +1019,9 @@
                     if (src) openLightbox(src);
                 });
             });
-            lightbox.addEventListener('click', closeLightbox);
+            if (lightbox) lightbox.addEventListener('click', closeLightbox);
             if (closeBtn) closeBtn.addEventListener('click', (e) => { e.stopPropagation(); closeLightbox(); });
-            lightboxImg.addEventListener('click', (e) => e.stopPropagation());
+            if (lightboxImg) lightboxImg.addEventListener('click', (e) => e.stopPropagation());
         });
     </script>
 </body>
